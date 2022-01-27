@@ -1,0 +1,15 @@
+/* DDS struct IDL for the creation of communication link/topics for process communication */
+
+struct IPRC_COMM_LINK {
+    short        h_Domain;
+    char         h_srcsys[32];
+    char         h_destsys[32];
+    long         h_Time_Date;
+    long         h_RefNumber;
+    short        h_Type;
+    short        h_SubType;
+    char         h_srcTopic[32];
+    char         h_destTopic[32]; 
+    long         h_DataLen;
+    octet         Data[16384];
+};
